@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Links</title>
+    <style>
+        /* Link em estado inicial sem sublinhado */
+        .link-a {
+            text-decoration: none;
+        }
+
+        /* Link em estado inicial com sublinhado acima do texto */
+        .link-b {
+            text-decoration: underline;
+        }
+
+        /* Link em estado ativo com uma linha passando ao meio do texto */
+        .link-b:active {
+            text-decoration: line-through;
+        }
+
+        /* Link em estado visitado com sublinhado abaixo do texto */
+        .link-b:visited {
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-underline-position: under;
+        }
+
+        /* Link em estado inicial na cor laranja e em estado hover na cor verde e sublinhado */
+        .link-c {
+            color: orange;
+            text-decoration: none;
+        }
+
+        .link-c:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        /* Link em estado inicial com bordas com estilo sólido e cor azul,
+        fundo preto e cor da fonte branca */
+        .link-d {
+            border: 2px solid blue;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+
+        /* Link em estado hover com bordas com estilo pontilhadas e cor preta,
+        fundo branco e cor da fonte preta */
+        .link-d:hover {
+            border-style: dotted;
+            border-color: black;
+            background-color: white;
+            color: black;
+        }
+
+        /* Link em estado inicial de cor vermelha */
+        .link-e {
+            color: red;
+            text-decoration: none;
+        }
+
+        /* Link em estado visitado em itálico e negrito na cor laranja */
+        .link-e:visited {
+            font-style: italic;
+            font-weight: bold;
+            color: orange;
+        }
+
+        /* Link em estado hover sublinhado */
+        .link-e:hover {
+            text-decoration: underline;
+        }
+
+        /* Quando o usuário clicar no link a cor deverá ser amarelo */
+        .link-e:active {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <!-- Links para aplicar os estilos -->
+        <a href="#" class="link-a">Link A</a><br>
+        <a href="#" class="link-b">Link B</a><br>
+        <a href="#" class="link-c">Link C</a><br>
+        <a href="#" class="link-d">Link D</a><br>
+        <a href="#" class="link-e">Link E</a>
+    </p>
+</body>
+</html>

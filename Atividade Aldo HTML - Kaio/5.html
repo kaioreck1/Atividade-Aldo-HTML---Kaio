@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras para Lista</title>
+    <style>
+        .lista {
+            list-style-type: none;
+            color: red;
+            font-family: Verdana, sans-serif;
+            font-size: 12px;
+        }
+
+        .lista li {
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 1px solid red;
+        }
+
+        .lista li:before {
+            content: "➔";
+            position: absolute;
+            left: 0;
+            color: red;
+        }
+
+        .lista li:hover {
+            color: green;
+            border-bottom-color: green;
+        }
+
+        .lista li:hover:before {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="lista">
+        <li>1 Kg de Batatas</li>
+        <li>2 Ovos</li>
+        <li>1 Xícara de Leite</li>
+        <li>200 gramas de farinha de trigo</li>
+        <li>1 colher de sopa de manteiga</li>
+    </ul>
+</body>
+</html>
